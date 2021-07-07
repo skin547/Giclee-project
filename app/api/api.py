@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from app.api.endpoint.image import images
+from app.api.endpoint import images
 
 api_router = APIRouter()
 
