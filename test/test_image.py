@@ -48,8 +48,7 @@ def test_mixedClone( imageProcessor ):
     paper = imageProcessor.makeBorder( paper, image )
     paper = imageProcessor.resize( paper, width, height )
 
-    print( paper.shape, image.shape )
     mixed_clone = imageProcessor.mixedClone( paper, image )
-    assert( mixed_clone.shape[0] == paper.shape[0] )
+    assert( mixed_clone.shape == image.shape )
     
 
